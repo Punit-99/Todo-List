@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #0c1844;
+  user-select: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background-color: black;
+}
+h1 {
+  color: #ff6969;
+}
+
+.todoContainer {
+  background-color: #fff5e1;
+  min-height: 35vh;
+  width: 30vw;
+  padding: 25px;
+  border-radius: 36px;
+}
+
+.addTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#inputField {
+  padding: 15px;
+  width: 20vw;
+  border-radius: 36px;
+  outline: none;
+  border: none;
+}
+
+#addTask-btn {
+  width: 5vw;
+  padding: 15px;
+  border-radius: 36px;
+  border: none;
+  background-color: #ff6969;
+}
+
+.task-section {
+  padding: 10px 15px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-text-inactive {
+  flex-grow: 1;
+  margin: 0 15px;
+  width: 1px;
+}
+
+.task-text-active {
+  flex-grow: 1;
+  margin: 0 15px;
+  width: 1px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-completed .material-symbols-outlined {
+  color: gray;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+}
+
+.checkbox-icon {
+  min-height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+}
+
+.material-symbols-outlined,
+button {
+  cursor: pointer;
+}
